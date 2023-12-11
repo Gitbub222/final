@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+  }
+  
+  #game {
+    position: relative;
+    width: 80vw;
+    height: 50vh;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  #dino {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+  }
+  
+  .cactus {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 60px;
+    background-color: black;
+  }
+  
