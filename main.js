@@ -3,6 +3,7 @@ const game = document.getElementById('game');
 
 let isJumping = false;
 
+
 function jump() {
     if (!isJumping) {
         isJumping = true;
@@ -42,11 +43,11 @@ function createCactus() {
     let cactusPosition = window.innerWidth;
 
     const moveCactus = setInterval(() => {
-        if (cactusPosition < -20) {
+        if (cactusPosition < -30) {
             clearInterval(moveCactus);
             game.removeChild(cactus);
         } else {
-            cactusPosition -= 5;
+            cactusPosition -= 10;
             cactus.style.left = cactusPosition + 'px';
 
             if (cactusPosition > 0 && cactusPosition < 50 && !isJumping) {
@@ -56,7 +57,7 @@ function createCactus() {
         }
     }, 20);
 
-    setTimeout(createCactus, 2000);
+    setTimeout(createCactus, 3000);
 }
 
 createCactus();
